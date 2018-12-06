@@ -13,7 +13,7 @@ function targetValue() {
         e.preventDefault();
         let numVal = $(e.target).closest('input').val()
         console.log('Button was clicked');
-        console.log(numVal);
+        console.log(5);
     })
 }
 
