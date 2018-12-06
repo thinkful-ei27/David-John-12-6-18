@@ -1,9 +1,9 @@
 'use strict';
 
 // Create an event listener for form submission
-function template(item, class) {
+function template(item, classer) {
     return `
-    <div class="fizz-buzz-item ${class}">
+    <div class="fizz-buzz-item ${classer}">
         <span>${item}</span>
     </div>`;
 }
@@ -11,9 +11,8 @@ function template(item, class) {
 function targetValue() {
     $('form').on('click', 'button', function(e) {
         e.preventDefault();
-        let numVal = $(e.target).closest('input').val()
-        console.log('Button was clicked');
-        console.log(5);
+        let numVal = $('input').val();
+        console.log(numVal);
     })
 }
 
